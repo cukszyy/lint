@@ -1,0 +1,6 @@
+framework module Pods_lint {
+  umbrella header "Pods-lint-umbrella.h"
+
+  export *
+  module * { export * }
+}
