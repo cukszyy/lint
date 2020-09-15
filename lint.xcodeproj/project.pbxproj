@@ -3,16 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2407195E17EF7A16E0DAFA45 /* Pods_lint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F93A3EA59C2EC4920D0C2DD /* Pods_lint.framework */; };
+		29C60C198338E992C97831D4 /* Pods_lintTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 267F76088B0CC7423BCDA34D /* Pods_lintTests.framework */; };
+		C93EC299AE648DE420B56B3A /* Pods_lint_lintUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4B372CB4FBAE36575D516F /* Pods_lint_lintUITests.framework */; };
+		F9890180251056C900BB4013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F989017F251056C900BB4013 /* AppDelegate.swift */; };
 		F98FBCAC25104D9C00C12527 /* lintApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98FBCAB25104D9C00C12527 /* lintApp.swift */; };
 		F98FBCAE25104D9C00C12527 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98FBCAD25104D9C00C12527 /* ContentView.swift */; };
 		F98FBCB025104DA000C12527 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F98FBCAF25104DA000C12527 /* Assets.xcassets */; };
 		F98FBCB325104DA000C12527 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F98FBCB225104DA000C12527 /* Preview Assets.xcassets */; };
 		F98FBCBE25104DA000C12527 /* lintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98FBCBD25104DA000C12527 /* lintTests.swift */; };
 		F98FBCC925104DA000C12527 /* lintUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98FBCC825104DA000C12527 /* lintUITests.swift */; };
+		F98FBCDA251050FD00C12527 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F98FBCD9251050FD00C12527 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +38,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		111B62AB521957F089B97B21 /* Pods-lintTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lintTests.release.xcconfig"; path = "Target Support Files/Pods-lintTests/Pods-lintTests.release.xcconfig"; sourceTree = "<group>"; };
+		267F76088B0CC7423BCDA34D /* Pods_lintTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lintTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D1ABA2ED9D960DB4A7CFC86 /* Pods-lint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lint.debug.xcconfig"; path = "Target Support Files/Pods-lint/Pods-lint.debug.xcconfig"; sourceTree = "<group>"; };
+		3F93A3EA59C2EC4920D0C2DD /* Pods_lint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C4B372CB4FBAE36575D516F /* Pods_lint_lintUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lint_lintUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D8D72D6EE0C5E71753C1CFB /* Pods-lint-lintUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lint-lintUITests.debug.xcconfig"; path = "Target Support Files/Pods-lint-lintUITests/Pods-lint-lintUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D07893963A39A1E325636DE9 /* Pods-lint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lint.release.xcconfig"; path = "Target Support Files/Pods-lint/Pods-lint.release.xcconfig"; sourceTree = "<group>"; };
+		D7E1D79798080B1625E5339E /* Pods-lintTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lintTests.debug.xcconfig"; path = "Target Support Files/Pods-lintTests/Pods-lintTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F51F45F665D6DFFD15E94836 /* Pods-lint-lintUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lint-lintUITests.release.xcconfig"; path = "Target Support Files/Pods-lint-lintUITests/Pods-lint-lintUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F989017F251056C900BB4013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F98FBCA825104D9C00C12527 /* lint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F98FBCAB25104D9C00C12527 /* lintApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lintApp.swift; sourceTree = "<group>"; };
 		F98FBCAD25104D9C00C12527 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +60,7 @@
 		F98FBCC425104DA000C12527 /* lintUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lintUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F98FBCC825104DA000C12527 /* lintUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lintUITests.swift; sourceTree = "<group>"; };
 		F98FBCCA25104DA000C12527 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F98FBCD9251050FD00C12527 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2407195E17EF7A16E0DAFA45 /* Pods_lint.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29C60C198338E992C97831D4 /* Pods_lintTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,12 +84,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C93EC299AE648DE420B56B3A /* Pods_lint_lintUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		184D958DF179DD22C52A85FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F93A3EA59C2EC4920D0C2DD /* Pods_lint.framework */,
+				4C4B372CB4FBAE36575D516F /* Pods_lint_lintUITests.framework */,
+				267F76088B0CC7423BCDA34D /* Pods_lintTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F98FBC9F25104D9C00C12527 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +108,8 @@
 				F98FBCBC25104DA000C12527 /* lintTests */,
 				F98FBCC725104DA000C12527 /* lintUITests */,
 				F98FBCA925104D9C00C12527 /* Products */,
+				FFF108B9D9D4DBBFD0500D0D /* Pods */,
+				184D958DF179DD22C52A85FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,10 +126,15 @@
 		F98FBCAA25104D9C00C12527 /* lint */ = {
 			isa = PBXGroup;
 			children = (
+				F98FBCD625104FFB00C12527 /* Model */,
+				F98FBCD72510500200C12527 /* View */,
+				F98FBCD82510500C00C12527 /* ViewModel */,
 				F98FBCAB25104D9C00C12527 /* lintApp.swift */,
+				F989017F251056C900BB4013 /* AppDelegate.swift */,
 				F98FBCAD25104D9C00C12527 /* ContentView.swift */,
 				F98FBCAF25104DA000C12527 /* Assets.xcassets */,
 				F98FBCB425104DA000C12527 /* Info.plist */,
+				F98FBCD9251050FD00C12527 /* GoogleService-Info.plist */,
 				F98FBCB125104DA000C12527 /* Preview Content */,
 			);
 			path = lint;
@@ -130,6 +166,40 @@
 			path = lintUITests;
 			sourceTree = "<group>";
 		};
+		F98FBCD625104FFB00C12527 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F98FBCD72510500200C12527 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F98FBCD82510500C00C12527 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FFF108B9D9D4DBBFD0500D0D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D1ABA2ED9D960DB4A7CFC86 /* Pods-lint.debug.xcconfig */,
+				D07893963A39A1E325636DE9 /* Pods-lint.release.xcconfig */,
+				6D8D72D6EE0C5E71753C1CFB /* Pods-lint-lintUITests.debug.xcconfig */,
+				F51F45F665D6DFFD15E94836 /* Pods-lint-lintUITests.release.xcconfig */,
+				D7E1D79798080B1625E5339E /* Pods-lintTests.debug.xcconfig */,
+				111B62AB521957F089B97B21 /* Pods-lintTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +207,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F98FBCCD25104DA000C12527 /* Build configuration list for PBXNativeTarget "lint" */;
 			buildPhases = (
+				AAECDE36E5AA69CA42581E41 /* [CP] Check Pods Manifest.lock */,
 				F98FBCA425104D9C00C12527 /* Sources */,
 				F98FBCA525104D9C00C12527 /* Frameworks */,
 				F98FBCA625104D9C00C12527 /* Resources */,
+				403BF1C45E9C50EC181ECF71 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +226,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F98FBCD025104DA000C12527 /* Build configuration list for PBXNativeTarget "lintTests" */;
 			buildPhases = (
+				A6434AA371BA4AFC5D0C8761 /* [CP] Check Pods Manifest.lock */,
 				F98FBCB525104DA000C12527 /* Sources */,
 				F98FBCB625104DA000C12527 /* Frameworks */,
 				F98FBCB725104DA000C12527 /* Resources */,
@@ -172,9 +245,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F98FBCD325104DA000C12527 /* Build configuration list for PBXNativeTarget "lintUITests" */;
 			buildPhases = (
+				EEC495F775EA42F7CA188330 /* [CP] Check Pods Manifest.lock */,
 				F98FBCC025104DA000C12527 /* Sources */,
 				F98FBCC125104DA000C12527 /* Frameworks */,
 				F98FBCC225104DA000C12527 /* Resources */,
+				5F80BA45138F19724F102E44 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -235,6 +310,7 @@
 			files = (
 				F98FBCB325104DA000C12527 /* Preview Assets.xcassets in Resources */,
 				F98FBCB025104DA000C12527 /* Assets.xcassets in Resources */,
+				F98FBCDA251050FD00C12527 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,11 +330,115 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		403BF1C45E9C50EC181ECF71 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-lint/Pods-lint-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-lint/Pods-lint-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-lint/Pods-lint-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F80BA45138F19724F102E44 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-lint-lintUITests/Pods-lint-lintUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-lint-lintUITests/Pods-lint-lintUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-lint-lintUITests/Pods-lint-lintUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6434AA371BA4AFC5D0C8761 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-lintTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAECDE36E5AA69CA42581E41 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-lint-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEC495F775EA42F7CA188330 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-lint-lintUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F98FBCA425104D9C00C12527 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9890180251056C900BB4013 /* AppDelegate.swift in Sources */,
 				F98FBCAE25104D9C00C12527 /* ContentView.swift in Sources */,
 				F98FBCAC25104D9C00C12527 /* lintApp.swift in Sources */,
 			);
@@ -414,6 +594,7 @@
 		};
 		F98FBCCE25104DA000C12527 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D1ABA2ED9D960DB4A7CFC86 /* Pods-lint.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -436,6 +617,7 @@
 		};
 		F98FBCCF25104DA000C12527 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D07893963A39A1E325636DE9 /* Pods-lint.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -458,6 +640,7 @@
 		};
 		F98FBCD125104DA000C12527 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7E1D79798080B1625E5339E /* Pods-lintTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -480,6 +663,7 @@
 		};
 		F98FBCD225104DA000C12527 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 111B62AB521957F089B97B21 /* Pods-lintTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +686,7 @@
 		};
 		F98FBCD425104DA000C12527 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D8D72D6EE0C5E71753C1CFB /* Pods-lint-lintUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -522,6 +707,7 @@
 		};
 		F98FBCD525104DA000C12527 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F51F45F665D6DFFD15E94836 /* Pods-lint-lintUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
