@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct lintApp: App {
@@ -13,6 +14,9 @@ struct lintApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onOpenURL(perform: { url in
+                    Auth.auth().canHandle(url)
+                })
         }
     }
 }
