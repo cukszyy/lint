@@ -50,12 +50,15 @@ struct Login: View {
                     .background(Color.gray)
                     .cornerRadius(10.0)
             })
-            .disabled(viewModel.fieldsAreFilled)
+            .disabled(!viewModel.fieldsAreFilled)
             .opacity(viewModel.fieldsAreFilled ? 1.0 : 0.3)
             
             Spacer()
         }
         .background(Color(red: 0.12, green: 0.11, blue: 0.14, opacity: 1.0)).ignoresSafeArea(edges: .all)
+        .alert(isPresented: $viewModel.hasErrors, content: {
+            Alert(title: Text("An error has occurred"), message: Text(viewModel.errorMsg), dismissButton: .destructive(Text("Dismiss")))
+        })
     }
 }
 

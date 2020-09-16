@@ -10,6 +10,7 @@
 		2407195E17EF7A16E0DAFA45 /* Pods_lint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F93A3EA59C2EC4920D0C2DD /* Pods_lint.framework */; };
 		29C60C198338E992C97831D4 /* Pods_lintTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 267F76088B0CC7423BCDA34D /* Pods_lintTests.framework */; };
 		C93EC299AE648DE420B56B3A /* Pods_lint_lintUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4B372CB4FBAE36575D516F /* Pods_lint_lintUITests.framework */; };
+		F956A6C52511B16600AB9FF3 /* UserRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = F956A6C42511B16600AB9FF3 /* UserRegister.swift */; };
 		F9890180251056C900BB4013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F989017F251056C900BB4013 /* AppDelegate.swift */; };
 		F98FBCAC25104D9C00C12527 /* lintApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98FBCAB25104D9C00C12527 /* lintApp.swift */; };
 		F98FBCAE25104D9C00C12527 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98FBCAD25104D9C00C12527 /* ContentView.swift */; };
@@ -49,6 +50,7 @@
 		D07893963A39A1E325636DE9 /* Pods-lint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lint.release.xcconfig"; path = "Target Support Files/Pods-lint/Pods-lint.release.xcconfig"; sourceTree = "<group>"; };
 		D7E1D79798080B1625E5339E /* Pods-lintTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lintTests.debug.xcconfig"; path = "Target Support Files/Pods-lintTests/Pods-lintTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F51F45F665D6DFFD15E94836 /* Pods-lint-lintUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lint-lintUITests.release.xcconfig"; path = "Target Support Files/Pods-lint-lintUITests/Pods-lint-lintUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F956A6C42511B16600AB9FF3 /* UserRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegister.swift; sourceTree = "<group>"; };
 		F989017F251056C900BB4013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F98FBCA825104D9C00C12527 /* lint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F98FBCAB25104D9C00C12527 /* lintApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lintApp.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				F9BA2D7B25105FB800E8DE75 /* Login.swift */,
+				F956A6C42511B16600AB9FF3 /* UserRegister.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 				F9890180251056C900BB4013 /* AppDelegate.swift in Sources */,
 				F98FBCAE25104D9C00C12527 /* ContentView.swift in Sources */,
 				F98FBCAC25104D9C00C12527 /* lintApp.swift in Sources */,
+				F956A6C52511B16600AB9FF3 /* UserRegister.swift in Sources */,
 				F9BA2D7E2510630100E8DE75 /* LoginViewModel.swift in Sources */,
 				F9BA2D7C25105FB800E8DE75 /* Login.swift in Sources */,
 			);
