@@ -21,6 +21,8 @@
 		F98FBCDA251050FD00C12527 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F98FBCD9251050FD00C12527 /* GoogleService-Info.plist */; };
 		F9BA2D7C25105FB800E8DE75 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BA2D7B25105FB800E8DE75 /* Login.swift */; };
 		F9BA2D7E2510630100E8DE75 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BA2D7D2510630100E8DE75 /* LoginViewModel.swift */; };
+		F9EC16C42514699E00985312 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EC16C32514699E00985312 /* RegisterViewModel.swift */; };
+		F9EC16C725146C1C00985312 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EC16C625146C1C00985312 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		F98FBCD9251050FD00C12527 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F9BA2D7B25105FB800E8DE75 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		F9BA2D7D2510630100E8DE75 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		F9EC16C32514699E00985312 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		F9EC16C625146C1C00985312 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,7 @@
 		F98FBCAA25104D9C00C12527 /* lint */ = {
 			isa = PBXGroup;
 			children = (
+				F9EC16C525146BE700985312 /* Utils */,
 				F98FBCD625104FFB00C12527 /* Model */,
 				F98FBCD72510500200C12527 /* View */,
 				F98FBCD82510500C00C12527 /* ViewModel */,
@@ -192,8 +197,17 @@
 			isa = PBXGroup;
 			children = (
 				F9BA2D7D2510630100E8DE75 /* LoginViewModel.swift */,
+				F9EC16C32514699E00985312 /* RegisterViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F9EC16C525146BE700985312 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F9EC16C625146C1C00985312 /* ImagePicker.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		FFF108B9D9D4DBBFD0500D0D /* Pods */ = {
@@ -449,8 +463,10 @@
 			files = (
 				F9890180251056C900BB4013 /* AppDelegate.swift in Sources */,
 				F98FBCAE25104D9C00C12527 /* ContentView.swift in Sources */,
+				F9EC16C42514699E00985312 /* RegisterViewModel.swift in Sources */,
 				F98FBCAC25104D9C00C12527 /* lintApp.swift in Sources */,
 				F956A6C52511B16600AB9FF3 /* UserRegister.swift in Sources */,
+				F9EC16C725146C1C00985312 /* ImagePicker.swift in Sources */,
 				F9BA2D7E2510630100E8DE75 /* LoginViewModel.swift in Sources */,
 				F9BA2D7C25105FB800E8DE75 /* Login.swift in Sources */,
 			);
