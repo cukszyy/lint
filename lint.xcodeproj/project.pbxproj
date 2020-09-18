@@ -175,7 +175,6 @@
 		F98FBCD625104FFB00C12527 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F9BA2D7D2510630100E8DE75 /* LoginViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -192,6 +191,7 @@
 		F98FBCD82510500C00C12527 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				F9BA2D7D2510630100E8DE75 /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";

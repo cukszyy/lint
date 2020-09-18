@@ -59,7 +59,7 @@ struct Login: View {
         .alert(isPresented: $viewModel.hasErrors, content: {
             Alert(title: Text("An error has occurred"), message: Text(viewModel.errorMsg), dismissButton: .destructive(Text("Dismiss")))
         })
-        .fullScreenCover(isPresented: $viewModel.status, content: {
+        .fullScreenCover(isPresented: $viewModel.userRegistered, content: {
             UserRegister()
         })
     }
