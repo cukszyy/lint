@@ -91,6 +91,7 @@ class LoginViewModel: ObservableObject {
             }
             
             self.status = true
+            self.setUserRegister(true)
             print("Success. Next step: display user's timeline.")
         }
     }
