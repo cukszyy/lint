@@ -15,6 +15,11 @@ class LoginViewModel: ObservableObject {
     @Published var hasErrors = false
     @Published var userRegistered = false
     
+    // Intended to be into Internal Storage (@AppStorage("current_status")),
+    // but Xcode 12 Beta version is probably bugged.
+    // I'll try and change it after beta is updated
+    @Published var status = false
+    
     var fieldsAreFilled: Bool {
         get {
             return self.code != "" && self.phoneNumber != ""
@@ -73,14 +78,24 @@ class LoginViewModel: ObservableObject {
         let fstore = Firestore.firestore()
         let uid = Auth.auth().currentUser!.uid
         
-        fstore.collection("users").whereField("uid", arrayContains: uid).getDocuments { (snapshat, err) in
+        fstore.collection("users").whereField("uid", isEqualTo: uid).getDocuments { (snapshot, err) in
             // No users/documents found
             if err != nil {
-                self.userRegistered = false
+                self.setUserRegister(false)
                 return
             }
             
+            if let documents = snapshot?.documents, documents.isEmpty {
+                self.setUserRegister(false)
+                return
+            }
+            
+            self.status = true
             print("Success. Next step: display user's timeline.")
         }
+    }
+    
+    func setUserRegister(_ registerStatus: Bool) {
+        self.userRegistered = registerStatus
     }
 }
