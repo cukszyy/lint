@@ -61,17 +61,22 @@ struct UserRegister: View {
             }
             .padding()
             
-            Button(action: viewModel.register, label: {
-                Text("Register")
-                    .foregroundColor(.white)
-                    .fontWeight(.heavy)
-                    .padding(.vertical)
-                    .frame(width: UIScreen.main.bounds.width - 150)
-                    .background(Color.gray)
-                    .cornerRadius(10.0)
-            })
-            .disabled(!viewModel.fieldsAreFilled)
-            .opacity(viewModel.fieldsAreFilled ? 1.0 : 0.3)
+            if viewModel.isUploading {
+                ProgressView()
+                    .padding()
+            } else {
+                Button(action: viewModel.register, label: {
+                    Text("Register")
+                        .foregroundColor(.white)
+                        .fontWeight(.heavy)
+                        .padding(.vertical)
+                        .frame(width: UIScreen.main.bounds.width - 150)
+                        .background(Color.gray)
+                        .cornerRadius(10.0)
+                })
+                .disabled(!viewModel.fieldsAreFilled)
+                .opacity(viewModel.fieldsAreFilled ? 1.0 : 0.3)
+            }
             
             Spacer()
         }
