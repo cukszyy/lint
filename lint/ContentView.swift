@@ -8,11 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    @AppStorage("current_status") var status = false
+    
     var body: some View {
         NavigationView {
-            Login()
-                .preferredColorScheme(.dark)
-                .navigationBarHidden(true)
+            VStack {
+                if status {
+                    Home()
+                } else {
+                    Login()
+                        .preferredColorScheme(.dark)
+                        .navigationBarHidden(true)
+                }
+            }
         }
     }
 }

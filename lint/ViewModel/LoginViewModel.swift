@@ -7,18 +7,17 @@
 
 import Foundation
 import Firebase
+import SwiftUI
 
 class LoginViewModel: ObservableObject {
     @Published var code = ""
     @Published var phoneNumber = ""
     @Published var errorMsg = ""
     @Published var hasErrors = false
-    @Published var userRegistered = false
-    
-    // Intended to be into Internal Storage (@AppStorage("current_status")),
-    // but Xcode 12 Beta version is probably bugged.
-    // I'll try and change it after beta is updated
-    @Published var status = false
+    @Published var displayUserRegister = false
+    @Published var isLoading = false
+
+    @AppStorage("current_status") var status = false
     
     var fieldsAreFilled: Bool {
         get {
@@ -27,6 +26,8 @@ class LoginViewModel: ObservableObject {
     }
     
     func verifyUser() {
+        self.isLoading = true
+        
         // only for testing
         Auth.auth().settings?.isAppVerificationDisabledForTesting = true
         
@@ -35,6 +36,7 @@ class LoginViewModel: ObservableObject {
             if err != nil {
                 self.errorMsg = err!.localizedDescription
                 self.hasErrors = true
+                self.isLoading = false
                 return
             }
             
@@ -45,6 +47,7 @@ class LoginViewModel: ObservableObject {
                     if err != nil {
                         self.errorMsg = err!.localizedDescription
                         self.hasErrors = true
+                        self.isLoading = false
                         return
                     }
                     self.checkUser()
@@ -79,24 +82,22 @@ class LoginViewModel: ObservableObject {
         let uid = Auth.auth().currentUser!.uid
         
         fstore.collection("users").whereField("uid", isEqualTo: uid).getDocuments { (snapshot, err) in
+            self.isLoading = false
+            
             // No users/documents found
             if err != nil {
-                self.setUserRegister(false)
+                print(err?.localizedDescription ?? "")
+                self.displayUserRegister = true
                 return
             }
             
             if let documents = snapshot?.documents, documents.isEmpty {
-                self.setUserRegister(false)
+                print("Documents are empty.")
+                self.displayUserRegister = true
                 return
             }
             
             self.status = true
-            self.setUserRegister(true)
-            print("Success. Next step: display user's timeline.")
         }
-    }
-    
-    func setUserRegister(_ registerStatus: Bool) {
-        self.userRegistered = registerStatus
     }
 }

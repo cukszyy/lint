@@ -21,6 +21,10 @@
 		F98FBCDA251050FD00C12527 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F98FBCD9251050FD00C12527 /* GoogleService-Info.plist */; };
 		F9BA2D7C25105FB800E8DE75 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BA2D7B25105FB800E8DE75 /* Login.swift */; };
 		F9BA2D7E2510630100E8DE75 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BA2D7D2510630100E8DE75 /* LoginViewModel.swift */; };
+		F9E949F025184198001F26C3 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E949EF25184198001F26C3 /* ImageUploader.swift */; };
+		F9E949F8251848C9001F26C3 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E949F7251848C9001F26C3 /* Timeline.swift */; };
+		F9E949FD25184D1A001F26C3 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E949FC25184D1A001F26C3 /* Home.swift */; };
+		F9E94A0225184D68001F26C3 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E94A0125184D68001F26C3 /* Settings.swift */; };
 		F9EC16C42514699E00985312 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EC16C32514699E00985312 /* RegisterViewModel.swift */; };
 		F9EC16C725146C1C00985312 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EC16C625146C1C00985312 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
@@ -69,6 +73,10 @@
 		F98FBCD9251050FD00C12527 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F9BA2D7B25105FB800E8DE75 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		F9BA2D7D2510630100E8DE75 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		F9E949EF25184198001F26C3 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
+		F9E949F7251848C9001F26C3 /* Timeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
+		F9E949FC25184D1A001F26C3 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		F9E94A0125184D68001F26C3 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		F9EC16C32514699E00985312 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		F9EC16C625146C1C00985312 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -189,6 +197,9 @@
 			children = (
 				F9BA2D7B25105FB800E8DE75 /* Login.swift */,
 				F956A6C42511B16600AB9FF3 /* UserRegister.swift */,
+				F9E949F7251848C9001F26C3 /* Timeline.swift */,
+				F9E949FC25184D1A001F26C3 /* Home.swift */,
+				F9E94A0125184D68001F26C3 /* Settings.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -206,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				F9EC16C625146C1C00985312 /* ImagePicker.swift */,
+				F9E949EF25184198001F26C3 /* ImageUploader.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -464,10 +476,14 @@
 				F9890180251056C900BB4013 /* AppDelegate.swift in Sources */,
 				F98FBCAE25104D9C00C12527 /* ContentView.swift in Sources */,
 				F9EC16C42514699E00985312 /* RegisterViewModel.swift in Sources */,
+				F9E949FD25184D1A001F26C3 /* Home.swift in Sources */,
 				F98FBCAC25104D9C00C12527 /* lintApp.swift in Sources */,
 				F956A6C52511B16600AB9FF3 /* UserRegister.swift in Sources */,
+				F9E94A0225184D68001F26C3 /* Settings.swift in Sources */,
+				F9E949F025184198001F26C3 /* ImageUploader.swift in Sources */,
 				F9EC16C725146C1C00985312 /* ImagePicker.swift in Sources */,
 				F9BA2D7E2510630100E8DE75 /* LoginViewModel.swift in Sources */,
+				F9E949F8251848C9001F26C3 /* Timeline.swift in Sources */,
 				F9BA2D7C25105FB800E8DE75 /* Login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

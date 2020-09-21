@@ -41,17 +41,23 @@ struct Login: View {
             .padding()
             .padding(.top, 10)
             
-            Button(action: viewModel.verifyUser, label: {
-                Text("Verify")
-                    .foregroundColor(.white)
-                    .fontWeight(.heavy)
-                    .padding(.vertical)
-                    .frame(width: UIScreen.main.bounds.width - 150)
-                    .background(Color.gray)
-                    .cornerRadius(10.0)
-            })
-            .disabled(!viewModel.fieldsAreFilled)
-            .opacity(viewModel.fieldsAreFilled ? 1.0 : 0.3)
+            if viewModel.isLoading {
+                ProgressView()
+                    .padding()
+            } else {
+                Button(action: viewModel.verifyUser, label: {
+                    Text("Verify")
+                        .foregroundColor(.white)
+                        .fontWeight(.heavy)
+                        .padding(.vertical)
+                        .frame(width: UIScreen.main.bounds.width - 150)
+                        .background(Color.gray)
+                        .cornerRadius(10.0)
+                })
+                .disabled(!viewModel.fieldsAreFilled)
+                .opacity(viewModel.fieldsAreFilled ? 1.0 : 0.3)
+            }
+            
             
             Spacer()
         }
@@ -59,7 +65,7 @@ struct Login: View {
         .alert(isPresented: $viewModel.hasErrors, content: {
             Alert(title: Text("An error has occurred"), message: Text(viewModel.errorMsg), dismissButton: .destructive(Text("Dismiss")))
         })
-        .fullScreenCover(isPresented: $viewModel.userRegistered, content: {
+        .fullScreenCover(isPresented: $viewModel.displayUserRegister, content: {
             UserRegister()
         })
     }
