@@ -11,6 +11,8 @@
 		29C60C198338E992C97831D4 /* Pods_lintTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 267F76088B0CC7423BCDA34D /* Pods_lintTests.framework */; };
 		C93EC299AE648DE420B56B3A /* Pods_lint_lintUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4B372CB4FBAE36575D516F /* Pods_lint_lintUITests.framework */; };
 		F9305ADC25214AF20095AE9D /* HomeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9305ADB25214AF20095AE9D /* HomeTabBar.swift */; };
+		F9305AE7252158460095AE9D /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9305AE6252158460095AE9D /* SettingsViewModel.swift */; };
+		F9305AED2521587A0095AE9D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9305AEC2521587A0095AE9D /* User.swift */; };
 		F956A6C52511B16600AB9FF3 /* UserRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = F956A6C42511B16600AB9FF3 /* UserRegister.swift */; };
 		F9890180251056C900BB4013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F989017F251056C900BB4013 /* AppDelegate.swift */; };
 		F98FBCAC25104D9C00C12527 /* lintApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98FBCAB25104D9C00C12527 /* lintApp.swift */; };
@@ -58,6 +60,8 @@
 		D7E1D79798080B1625E5339E /* Pods-lintTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lintTests.debug.xcconfig"; path = "Target Support Files/Pods-lintTests/Pods-lintTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F51F45F665D6DFFD15E94836 /* Pods-lint-lintUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lint-lintUITests.release.xcconfig"; path = "Target Support Files/Pods-lint-lintUITests/Pods-lint-lintUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F9305ADB25214AF20095AE9D /* HomeTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBar.swift; sourceTree = "<group>"; };
+		F9305AE6252158460095AE9D /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		F9305AEC2521587A0095AE9D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F956A6C42511B16600AB9FF3 /* UserRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegister.swift; sourceTree = "<group>"; };
 		F989017F251056C900BB4013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F98FBCA825104D9C00C12527 /* lint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lint.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -190,6 +194,7 @@
 		F98FBCD625104FFB00C12527 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F9305AEC2521587A0095AE9D /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -212,6 +217,7 @@
 			children = (
 				F9BA2D7D2510630100E8DE75 /* LoginViewModel.swift */,
 				F9EC16C32514699E00985312 /* RegisterViewModel.swift */,
+				F9305AE6252158460095AE9D /* SettingsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -484,11 +490,13 @@
 				F98FBCAC25104D9C00C12527 /* lintApp.swift in Sources */,
 				F956A6C52511B16600AB9FF3 /* UserRegister.swift in Sources */,
 				F9E94A0225184D68001F26C3 /* Settings.swift in Sources */,
+				F9305AED2521587A0095AE9D /* User.swift in Sources */,
 				F9E949F025184198001F26C3 /* ImageUploader.swift in Sources */,
 				F9EC16C725146C1C00985312 /* ImagePicker.swift in Sources */,
 				F9BA2D7E2510630100E8DE75 /* LoginViewModel.swift in Sources */,
 				F9E949F8251848C9001F26C3 /* Timeline.swift in Sources */,
 				F9BA2D7C25105FB800E8DE75 /* Login.swift in Sources */,
+				F9305AE7252158460095AE9D /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
